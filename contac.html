@@ -4,6 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <style>
+        {
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-sherif;
+        }
+
+        #sbutton{
+            color: white;
+            background: blueviolet;
+            font-size: 24px;
+            padding: 15px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        body { background: #555; }
+        label { font-weight: bold; }
+        h1 { font-size: 28px; color: white}
+        input { width: 250px;}
+        textarea { min-width: 250px; min-height: 50px; }
+        input, textarea { max-width: 250px; }
+        #flwupy { margin-left: -125px; }
+        #flwupy, #flwupn { margin-right: -100px; }
+        .flwlbl { font-weight: normal; }
+        form { min-width: 550px; margin-bottom: 20px}
+        .rqd { color: red; font-weight: normal; }
+
+        #attach {
+            background: white !important
+            border: 1px solid gray
+            border-radius: 2px;
+        }
+
+        #fdiv {
+            background: #ccc
+            border-radius: 5px;
+            width: 50%;
+            text-slign: center;
+            margin: 0 auto;
+            /* 30 top/bot, 15 1/r */
+            padding: 30px 15px;
+        }
+    </style>
 </head>
 <body>
     <center><h1>Contact me</h1></center>\
@@ -11,13 +54,13 @@
     <from action="#" method=""post" id="contactform"
      style="text-align:center;" onsubmit="alert('not implemented yet');">
         <div id="fdiv">
-            <label for="myname">Name: </label> <br/>
+            <label for="myname">Name: <span class="rqd">*</span></label> <br/>
             <input type="text" name="myname" id="myname"     required>  <br/> <br/>
 
-            label for="myemail">Name: </label> <br/>
+            label for="myemail">email:<span class="rqd">*</label> <br/>
             <input type="email" name="myemail" id="myemail" required> <br/><br/>
 
-            label for="myname">Name: </label> <br/>
+            label for="myname">subject:<span class="rqd">*</label> <br/>
             <input type="text" name="subject" id="mysubject" placeholder="cs 101" required> <br/><br/>
 
             <textarea name="tbody" id="tbody" placeholder="Enter message..." required> </textarea> <br/> <br/>
@@ -31,7 +74,16 @@
                 <option Value="">Crit</option>
             </select> </br> </br>
 
-            <!--TODO: file and radio-->
+            <label for="attach">Attachments: </label> <br/>
+            <input type="file" name="attach" id="attach"> <br/> <br/>
+
+            <label for="flwup"> Do you want a follow-up email?</label> <br/>
+            <input type="radio" name="flupy" id="flwup" value="yes" />
+            <label for="flwup"> class="something" id="flwup" value="yes"</label>
+            <input type="radio" name="flupy" id="flwup" value="no" />
+            <label for="flwup"> class="bitlife" id="flwup" value="yes"</label>
+
+            <input type="hidden" value="humans" id="humans"
 
             <input type="submit" value="submit" id="sbutton"/>
         </div>
