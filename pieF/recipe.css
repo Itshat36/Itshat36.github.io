@@ -1,10 +1,14 @@
-    body {font-family: Arial;}
+    body
+    {font-family: Arial;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+    }
+    
 
-        h1, h2, h3, h4, h5 {
-            font-family: Helvetica;
-            color: greenyellow
-        }
-        body {
-            font-weight: bold;
-            color: rgb(255, 255, 255);
-        }
+    h1, h2, h3, h4, h5 {
+    font-family: Helvetica;
+    color: greenyellow
+
+    }
+
