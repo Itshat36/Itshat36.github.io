@@ -2,13 +2,10 @@
     {font-family: Arial;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    
+    background-image: img src="silverware.jpg";
     }
-    
-
     h1, h2, h3, h4, h5 {
     font-family: Helvetica;
     color: greenyellow
-
     }
 
