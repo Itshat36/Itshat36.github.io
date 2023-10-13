@@ -1,0 +1,13 @@
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th { background: orange; }
+.rheader { background: rosybrown; }
+
+body {
+    background: linear-gradient(#fff, #2e9c02);
+    background-size: 100% 350%;
+}
