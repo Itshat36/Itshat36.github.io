@@ -6,18 +6,17 @@
     <title>Prog54c</title>
 </head>
 <body>
-    <label for="area">area:</label>
-    <input type="number" id="len" name="len">
-
-    <label for="width">width:</label>
-    <input type="number" id="width" name="width">
+    <label for="radius">radius:</label>
+    <input type="number" id="radius" name="radius">
 
     <
 
     <button onclick="
         var pi = 3.14159
+        var radius = Number(radius);
         
-        var circumference = 2 * pi 
+        var circumference = 2 * pi * radius
+        var area = pi * radius **2
         document.writeln('Area: ' + area + ' circumference: ' + circumference); 
         alert('Area: ' + area + ' circumference: ' + circumference);
     ">Calculate Area and circumference</button>
