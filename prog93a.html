@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prog93a</title>
+    <title>Prog54c</title>
 </head>
 <body>
-    <label for="kil">Kilowatts Used: </label>
+    <label for="kil">Kilowatts used:</label>
     <input type="number" id="kil" name="kil">
 
     <button onclick="
-    var kil = document.getElementById('kil').value;
-    var base = kil * 0.075
-    var such = base * 0.1
-    var city = base * 0.03 
-    ">Price of bill</button>
+        var kil = Number(kil);
+        var base = kil * 0.0475
+        var Surcharge = base * 0.1
+        var city = base * 0.03
+        var cost = base + Surcharge + cost
+        var lcost = cost / .04
+        var Fcost = cost + lcost
+        
+        document.writeln('Kilowatts Used: ' + kil);
+        document.writeln('base: ' + base + ' Surcharge: ' + Surcharge + 'city' + city);
+        document.writeln('Pay this amount' + cost + ' After May 20th Pay: ' + Fcost);
+    ">Calculate Area and circumference</button>
 </body>
 </html>
