@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog209a</title>
+</head>
+<body>
+    <script>
+        var nums = [];
+        for (var lcv = 0; lcv < 400; lcv++) {
+            var n = Math.round(Math.random() * 1000) + 1;
+            nums.push(n);
+        }
+
+        var lt = 0;
+        var gte = 0;
+        for(var lcv = 0; lvc < nums.length; lcv++) {
+            var current = nums[lcv];
+            if (current >= 500) {
+                gte++;
+            } else{
+                lt++;
+            }
+        }
+        
+        document.writeln("# of numbers >= 500" + gte + "<br/>");
+        document.writeln("# of numbers < 500" + lt + "<br/>");
+        document.writeln("# of numbers" + nums.length + "<br/><br/?");
+        document.writeln(nums);
+    </script>
+</body>
+</html>
