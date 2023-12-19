@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script scr="" intergrity=""></script>
+</head>
+<body>
+    <p id="test1">This is a paragraph</p>
+    <p id="test2">Here's another paragraph</p>
+    <p> Input <input type="text" id="test3" value="placeholder"></p>
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set value</button>
+    <button id="btn4">Append Text</button>
+
+    <p id="gtest">Here's some <b>bold</b> text in a paragraph</p>
+    <button id="gtbn1">Set Text</button>
+    <button id="gtbn2">Set HTML</button>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <button id="lbtn">Append List Item</button>
+
+    <div style="background: green; width: 100px;
+                height: 100px; position: absolute"></div>
+                
+    <button id="atbn>Run Animation"></button>
+
+    <script>
+        $(document).ready(funtion(){
+            // All your code in document.ready
+        });
+        $("#btn2").click(funtion(){
+            $("#test2").html("<b>Hello, world!</b>");
+        })
+    </script>
+</body>
+</html>
