@@ -1,4 +1,16 @@
 body {
 	background-color: #000000;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    color: gold
+}
+
+h2 {
+    color: rgb(0, 60, 255)
+}
+
+h3 {
+    color: rgb(255, 0, 0)
 }
